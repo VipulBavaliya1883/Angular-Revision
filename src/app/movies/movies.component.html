@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Rating</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+      
+        <tr *ngFor="let m of myMovie">
+            <td>{{m._id}}</td>
+            <td>{{m.name}}</td>
+            <td>{{m.rating}}</td>
+            <td>
+                <button (click)="delete(m)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
